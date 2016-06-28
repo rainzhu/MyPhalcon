@@ -10,5 +10,11 @@ class AboutController extends ControllerBase
 
     public function indexAction()
     {
+        $this->flash->success('success');
+    }
+    public function testAction()
+    {
+        $this->flash->notice('hhaahha');
+
     }
 }

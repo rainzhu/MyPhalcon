@@ -1,13 +1,13 @@
 <?php
 
 use Phalcon\Mvc\Controller;
-
+//做一个路由转发
 class ControllerBase extends Controller
 {
 
     protected function initialize()
     {
-        $this->tag->prependTitle('INVO | ');
+        $this->tag->prependTitle('MyPhalcon | ');
         $this->view->setTemplateAfter('main');
     }
 

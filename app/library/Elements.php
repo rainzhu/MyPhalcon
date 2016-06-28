@@ -28,13 +28,22 @@ class Elements extends Component
                 'caption' => 'Contact',
                 'action' => 'index'
             ),
+            'test' => array(
+            'caption' => 'Test',
+            'action' => 'index'
+        )
         ),
         'navbar-right' => array(
             'session' => array(
                 'caption' => 'Log In/Sign Up',
                 'action' => 'index'
             ),
+            'session' => array(
+                'caption' => 'crud',
+                'action' => 'index'
+            )
         )
+
     );
 
     private $_tabs = array(
@@ -72,7 +81,6 @@ class Elements extends Component
      */
     public function getMenu()
     {
-
         $auth = $this->session->get('auth');
         if ($auth) {
             $this->_headerMenu['navbar-right']['session'] = array(
