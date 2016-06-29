@@ -13,7 +13,7 @@ class Elements extends Component
     private $_headerMenu = array(
         'navbar-left' => array(
             'index' => array(
-                'caption' => 'Home',
+                'caption' => '主页',
                 'action' => 'index'
             ),
             'invoices' => array(
@@ -21,11 +21,11 @@ class Elements extends Component
                 'action' => 'index'
             ),
             'about' => array(
-                'caption' => 'About',
+                'caption' => '关于',
                 'action' => 'index'
             ),
             'contact' => array(
-                'caption' => 'Contact',
+                'caption' => '联系我们',
                 'action' => 'index'
             ),
             'test' => array(
@@ -35,12 +35,12 @@ class Elements extends Component
         ),
         'navbar-right' => array(
             'session' => array(
-                'caption' => 'Log In/Sign Up',
+                'caption' => '登录/注册',
                 'action' => 'index'
             ),
-            'session' => array(
-                'caption' => 'crud',
-                'action' => 'index'
+            'show' => array(
+                'caption' => 'Show',
+                'action' => 'show'
             )
         )
 
@@ -84,7 +84,7 @@ class Elements extends Component
         $auth = $this->session->get('auth');
         if ($auth) {
             $this->_headerMenu['navbar-right']['session'] = array(
-                'caption' => 'Log Out',
+                'caption' => '注销',
                 'action' => 'end'
             );
         } else {

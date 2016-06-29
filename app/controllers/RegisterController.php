@@ -29,7 +29,7 @@ class RegisterController extends ControllerBase
             $repeatPassword = $this->request->getPost('repeatPassword');
 
             if ($password != $repeatPassword) {
-                $this->flash->error('Passwords are different');
+                $this->flash->error('密码不一致');
                 return false;
             }
 
@@ -47,7 +47,7 @@ class RegisterController extends ControllerBase
             } else {
                 $this->tag->setDefault('email', '');
                 $this->tag->setDefault('password', '');
-                $this->flash->success('Thanks for sign-up, please log-in to start generating invoices');
+                $this->flash->success('感谢注册，请登录');
                 return $this->forward('session/index');
             }
         }

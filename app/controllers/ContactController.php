@@ -9,7 +9,7 @@ class ContactController extends ControllerBase
 {
     public function initialize()
     {
-        $this->tag->setTitle('Contact us');
+        $this->tag->setTitle('联系我们');
         parent::initialize();
     }
 
@@ -46,7 +46,7 @@ class ContactController extends ControllerBase
             return $this->forward('contact/index');
         }
 
-        $this->flash->success('Thanks, we will contact you in the next few hours');
+        $this->flash->success('感谢，我们会在之后几个小时联系你。');
         return $this->forward('index/index');
     }
 }

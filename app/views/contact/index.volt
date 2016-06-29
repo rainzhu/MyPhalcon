@@ -2,10 +2,10 @@
 {{ content() }}
 
 <div class="page-header">
-    <h2>Contact Us</h2>
+    <h2>联系我们</h2>
 </div>
 
-<p>Send us a message and let us know how we can help. Please be as descriptive as possible as it will help us serve you better.</p>
+<p>给我们反馈信息，让我们知道我们如何帮助。.</p>
 
 {{ form('contact/send', 'role': 'form') }}
     <fieldset>
@@ -22,7 +22,7 @@
             {{ form.render('comments', ['class': 'form-control']) }}
         </div>
         <div class="form-group">
-            {{ submit_button('Send', 'class': 'btn btn-primary btn-large') }}
+            {{ submit_button('提交', 'class': 'btn btn-primary btn-large') }}
         </div>
     </fieldset>
 </form>
