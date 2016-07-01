@@ -15,7 +15,7 @@
                 {{ form.render('name', ['class': 'form-control']) }}
                 <p class="help-block">(required)</p>
                 <div class="alert alert-warning" id="name_alert">
-                    <strong>Warning!</strong> 请输入全名
+                    <strong>警告!</strong> 请输入全名
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 {{ form.render('username', ['class': 'form-control']) }}
                 <p class="help-block">(required)</p>
                 <div class="alert alert-warning" id="username_alert">
-                    <strong>Warning!</strong> 请输入合法的名字
+                    <strong>警告!</strong> 请输入合法的名字
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 {{ form.render('email', ['class': 'form-control']) }}
                 <p class="help-block">(required)</p>
                 <div class="alert alert-warning" id="email_alert">
-                    <strong>Warning!</strong>请输入邮件名
+                    <strong>警告!</strong>请输入邮件名
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                 {{ form.render('password', ['class': 'form-control']) }}
                 <p class="help-block">(minimum 8 characters)</p>
                 <div class="alert alert-warning" id="password_alert">
-                    <strong>Warning!</strong> 请输入有效密码
+                    <strong>警告!</strong> 请输入有效密码
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="controls">
                 {{ password_field('repeatPassword', 'class': 'input-xlarge') }}
                 <div class="alert" id="repeatPassword_alert">
-                    <strong>Warning!</strong>前后密码不一致
+                    <strong>警告</strong>前后密码不一致
                 </div>
             </div>
         </div>

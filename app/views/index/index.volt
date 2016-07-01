@@ -3,8 +3,7 @@
 
 <div class="jumbotron">
     <h1>欢迎来到steam信息推荐</h1>
-    <p>INVO is a revolutionary application to create invoices online for free.
-    Receive online payments from your clients and improve your cash flow</p>
+    <p>这是一个简单的推荐</p>
     <p>{{ link_to('register', 'Try it for Free &raquo;', 'class': 'btn btn-primary btn-large btn-success') }}</p>
 </div>
 
