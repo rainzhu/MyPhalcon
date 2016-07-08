@@ -28,7 +28,7 @@ class RegisterForm extends Form
         $name->setFilters(array('alpha'));
         $name->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Please enter your desired user name'
+                'message' => '请输入你希望使用的用户名'
             ))
         ));
         $this->add($name);
@@ -39,10 +39,10 @@ class RegisterForm extends Form
         $email->setFilters('email');
         $email->addValidators(array(
             new PresenceOf(array(
-                'message' => 'E-mail is required'
+                'message' => '邮箱必填'
             )),
             new Email(array(
-                'message' => 'E-mail is not valid'
+                'message' => '邮箱不正确'
             ))
         ));
         $this->add($email);
@@ -52,7 +52,7 @@ class RegisterForm extends Form
         $password->setLabel('密码');
         $password->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Password is required'
+                'message' => '密码必填'
             ))
         ));
         $this->add($password);
@@ -62,7 +62,7 @@ class RegisterForm extends Form
         $repeatPassword->setLabel('重复密码');
         $repeatPassword->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Confirmation password is required'
+                'message' => '必须确认密码'
             ))
         ));
         $this->add($repeatPassword);
