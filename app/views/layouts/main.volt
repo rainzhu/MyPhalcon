@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">INVO</a>
+            <a class="navbar-brand" href="#">GRec</a>
         </div>
         {{ elements.getMenu() }}
     </div>
@@ -18,6 +18,6 @@
     {{ content() }}
     <hr>
     <footer>
-        <p>&copy; Company 2015</p>
+        <p>&copy; Company 2016</p>
     </footer>
 </div>
