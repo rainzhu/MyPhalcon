@@ -30,7 +30,7 @@ class Elements extends Component
             ),
             'test' => array(
             'caption' => '测试',
-            'action' => 'index'
+            'action' => 'test'
         )
         ),
         'navbar-right' => array(
