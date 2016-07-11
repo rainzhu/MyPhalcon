@@ -52,6 +52,13 @@ class SessionController extends ControllerBase
             if ($user != false) {
                 $this->_registerSession($user);
                 $this->flash->success('Welcome ' . $user->name);
+                var_dump(111);
+                var_dump($this->dispatcher->forward(
+                    array(
+                        'controller' => 'tag',
+                        'action'     => 'index'
+                    )
+                ));
                 return $this->dispatcher->forward(
                     array(
                         'controller' => 'tag',
