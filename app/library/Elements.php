@@ -17,7 +17,7 @@ class Elements extends Component
                 'action' => 'index'
             ),
             'invoices' => array(
-                'caption' => '发票',
+                'caption' => '个人信息',
                 'action' => 'index'
             ),
             'about' => array(

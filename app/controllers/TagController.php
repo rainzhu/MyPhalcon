@@ -10,7 +10,7 @@ class TagController extends ControllerBase
 
     public function indexAction()
     {
-        $this->flash->success('success');
+       // $this->flash->success('success');
     }
 
 }
