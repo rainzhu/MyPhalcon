@@ -64,8 +64,8 @@ class SecurityPlugin extends Plugin
 				'errors'     => array('show401', 'show404', 'show500'),
 				'session'    => array('index', 'register', 'start', 'end'),
 				'contact'    => array('index', 'send'),
-				'test'      => array('index','test','hello'),
-				'show'      => array('show')
+				'tag'      => array('index')
+
 
 			);
 			foreach ($publicResources as $resource => $actions) {
