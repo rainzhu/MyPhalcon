@@ -29,7 +29,7 @@ class Elements extends Component
                 'action' => 'index'
             ),
             'test' => array(
-            'caption' => 'Test',
+            'caption' => '测试',
             'action' => 'index'
         )
         ),
@@ -37,10 +37,6 @@ class Elements extends Component
             'session' => array(
                 'caption' => '登录/注册',
                 'action' => 'index'
-            ),
-            'show' => array(
-                'caption' => 'Show',
-                'action' => 'show'
             )
         )
 
