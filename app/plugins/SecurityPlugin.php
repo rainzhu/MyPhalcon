@@ -50,7 +50,7 @@ class SecurityPlugin extends Plugin
 				'products'     => array('index', 'search', 'new', 'edit', 'save', 'create', 'delete'),
 				'producttypes' => array('index', 'search', 'new', 'edit', 'save', 'create', 'delete'),
 				'invoices'     => array('index', 'profile'),
-
+				'tag'      => array('index'),
 			);
 			foreach ($privateResources as $resource => $actions) {
 				$acl->addResource(new Resource($resource), $actions);
@@ -64,7 +64,7 @@ class SecurityPlugin extends Plugin
 				'errors'     => array('show401', 'show404', 'show500'),
 				'session'    => array('index', 'register', 'start', 'end'),
 				'contact'    => array('index', 'send'),
-				'tag'      => array('index')
+
 
 
 			);
