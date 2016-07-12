@@ -54,7 +54,7 @@ class SessionController extends ControllerBase
                 $this->flash->success('Welcome ' . $user->name);
                 return $this->dispatcher->forward(
                     array(
-                        'controller' => 'tag',
+                        'controller' => 'test',
                         'action'     => 'index'
                     )
                 );
