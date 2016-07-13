@@ -27,7 +27,7 @@ class CompaniesForm extends Form
         $name->setFilters(array('striptags', 'string'));
         $name->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Name is required'
+                'message' => '名字是必填的'
             ))
         ));
         $this->add($name);
@@ -37,7 +37,7 @@ class CompaniesForm extends Form
         $telephone->setFilters(array('striptags', 'string'));
         $telephone->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Telephone is required'
+                'message' => '电话是必填的'
             ))
         ));
         $this->add($telephone);
@@ -47,7 +47,7 @@ class CompaniesForm extends Form
         $address->setFilters(array('striptags', 'string'));
         $address->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Address is required'
+                'message' => '地址是必填的'
             ))
         ));
         $this->add($address);
@@ -57,7 +57,7 @@ class CompaniesForm extends Form
         $city->setFilters(array('striptags', 'string'));
         $city->addValidators(array(
             new PresenceOf(array(
-                'message' => 'City is required'
+                'message' => '城市是必填的'
             ))
         ));
         $this->add($city);

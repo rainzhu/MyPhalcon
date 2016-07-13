@@ -26,7 +26,7 @@ class ProductTypesForm extends Form
         $name->setFilters(array('striptags', 'string'));
         $name->addValidators(array(
             new PresenceOf(array(
-                'message' => 'Name is required'
+                'message' => '名字是必填的'
             ))
         ));
         $this->add($name);
