@@ -51,7 +51,7 @@ class SessionController extends ControllerBase
             ));
             if ($user != false) {
                 $this->_registerSession($user);
-                $this->flash->success('Welcome ' . $user->name);
+                $this->flash->success('欢迎 ' . $user->name);
                 return $this->dispatcher->forward(
                     array(
                         'controller' => 'test',
@@ -74,7 +74,7 @@ class SessionController extends ControllerBase
     public function endAction()
     {
         $this->session->remove('auth');
-        $this->flash->success('Goodbye!');
+        $this->flash->success('再见!');
         return $this->forward('index/index');
     }
 }
