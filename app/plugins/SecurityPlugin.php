@@ -57,7 +57,7 @@ class SecurityPlugin extends Plugin
 				$acl->addResource(new Resource($resource), $actions);
 			}
 
-			//Public area resources
+			//公共资源访问
 			$publicResources = array(
 				'index'      => array('index'),
 				'about'      => array('index','test'),
@@ -65,9 +65,6 @@ class SecurityPlugin extends Plugin
 				'errors'     => array('show401', 'show404', 'show500'),
 				'session'    => array('index', 'register', 'start', 'end'),
 				'contact'    => array('index', 'send'),
-
-
-
 			);
 			foreach ($publicResources as $resource => $actions) {
 				$acl->addResource(new Resource($resource), $actions);
