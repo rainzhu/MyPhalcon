@@ -1,6 +1,6 @@
 <?php
 
-use Phalcon\Mvc\Model\Query;
+
 class IndexController extends ControllerBase
 {
     public function initialize()
@@ -23,6 +23,9 @@ class IndexController extends ControllerBase
 //            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
 //            $this->flash->notice( "url: ", $game_info->url, "\n");
 //        }
+         $gameinfo=GameInfo::find();
+        echo "there are ",count($gameinfo);
+
     }
 
 
