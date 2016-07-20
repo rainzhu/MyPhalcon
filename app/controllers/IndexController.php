@@ -22,8 +22,8 @@ class IndexController extends ControllerBase
         // Execute the query returning a result if any
         $game_infos = $query->execute();
         foreach ($game_infos as $game_info) {
-            echo "title: ", $game_info->hotTitle, "\n";
-            echo "url: ", $game_info->url, "\n";
+            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
+            $this->flash->notice( "url: ", $game_info->url, "\n");
         }
     }
 
