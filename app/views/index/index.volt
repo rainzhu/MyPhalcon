@@ -10,11 +10,11 @@
 <div class="row">
     <div class="col-md-4">
         <h2>网络游戏</h2>
-        <p> </p>
+        <p>标题</p>
     </div>
     <div class="col-md-4">
         <h2>单机游戏</h2>
-        <p></p>
+        <p> </p>
     </div>
     <div class="col-md-4">
         <h2>手机游戏</h2>
