@@ -23,10 +23,13 @@ class IndexController extends ControllerBase
 //            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
 //            $this->flash->notice( "url: ", $game_info->url, "\n");
 //        }
-         $gameinfo=GameInfo::find();
-        echo "there are ",count($gameinfo);
+         $gameinfos=GameInfo::find();
+        //echo "there are ",count($gameinfo);
+              foreach ($gameinfos as $game_info) {
+                  $this->flash->notice("title: ", $game_info->hotTitle, "\n");
+                  $this->flash->notice("url: ", $game_info->url, "\n");
 
-    }
+              }
 
 
 }
