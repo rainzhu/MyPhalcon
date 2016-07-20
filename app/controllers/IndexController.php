@@ -16,13 +16,13 @@ class IndexController extends ControllerBase
         }
 
         // Instantiate the Query
-        $query = new Query("SELECT * FROM game_info", $this->getDI());
-        // Execute the query returning a result if any
-        $game_infos = $query->execute();
-        foreach ($game_infos as $game_info) {
-            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
-            $this->flash->notice( "url: ", $game_info->url, "\n");
-        }
+//        $query = new Query("SELECT * FROM game_info", $this->getDI());
+//        // Execute the query returning a result if any
+//        $game_infos = $query->execute();
+//        foreach ($game_infos as $game_info) {
+//            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
+//            $this->flash->notice( "url: ", $game_info->url, "\n");
+//        }
     }
 
 
