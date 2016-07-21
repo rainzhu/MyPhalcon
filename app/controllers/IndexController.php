@@ -28,6 +28,7 @@ class IndexController extends ControllerBase
 //     foreach ($gameinfos as $gameinfo) {
 //            echo $gameinfo->hotTitle, "\n";
 //        }
+        
         echo "there are ", count($gameinfos);
     }
 
