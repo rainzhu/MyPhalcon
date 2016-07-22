@@ -10,7 +10,7 @@
 <div class="row">
     <div class="col-md-4">
         <h2>网络游戏</h2>
-        <p>标题</p>
+        <p>{{gameinfo.hotTitle}}  {{gameinfo.url}}</p><p></p>
     </div>
     <div class="col-md-4">
         <h2>单机游戏</h2>

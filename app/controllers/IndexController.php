@@ -15,20 +15,13 @@ class IndexController extends ControllerBase
             $this->flash->notice('这是我基于Phalcon的一个调试Demo');
         }
 
-        // Instantiate the Query
-//        $query = new Query("SELECT * FROM game_info", $this->getDI());
-//        // Execute the query returning a result if any
-//        $game_infos = $query->execute();
-//        foreach ($game_infos as $game_info) {
-//            $this->flash->notice( "title: ", $game_info->hotTitle, "\n");
-//            $this->flash->notice( "url: ", $game_info->url, "\n");
-//        }
+
         //2016.7.20 zhuyu
         $gameinfos = GameInfo::find();
-    foreach ($gameinfos as $gameinfo) {
-            echo $gameinfo->hotTitle, "\n";
+        foreach ($gameinfos as $gameinfo) {
+            echo $gameinfo->hotTitle."\n".$gameinfo->url."\n";
        }
-
+        
         echo "there are ", count($gameinfos);
     }
 
