@@ -10,11 +10,13 @@
 <div class="row">
     <div class="col-md-4">
         <h2>网络游戏</h2>
-        <p><?php
-              foreach ($posts as $post) {
+        <p>
+        <?php
+            foreach ($posts as $post) {
             echo "<a href='http://www.doyo.cn/.$gameinfo->url.'> $gameinfo->hotTitle.<br></a>";
            }
-        ></p>
+        ?>
+        </p>
     </div>
     <div class="col-md-4">
         <h2>单机游戏</h2>
