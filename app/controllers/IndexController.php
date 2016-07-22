@@ -19,9 +19,9 @@ class IndexController extends ControllerBase
         //2016.7.20 zhuyu
         $gameinfos = GameInfo::find();
         foreach ($gameinfos as $gameinfo) {
-            echo $gameinfo->hotTitle."\n".$gameinfo->url."\n";
+            echo $gameinfo->hotTitle."<br>"."http://www.doyo.cn/".$gameinfo->url."<br>";
        }
-        
+
         echo "there are ", count($gameinfos);
     }
 
