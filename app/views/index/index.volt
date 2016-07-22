@@ -13,7 +13,7 @@
         <p>
         <?php
             foreach ($posts as $post) {
-            echo "<a href='http://www.doyo.cn/.$gameinfo->url.'> $gameinfo->hotTitle.<br></a>";
+            echo "<a href='http://www.doyo.cn/.$post->url.'> $post->hotTitle.<br></a>";
            }
         ?>
         </p>

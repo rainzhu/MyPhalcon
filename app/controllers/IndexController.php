@@ -21,6 +21,9 @@ class IndexController extends ControllerBase
             "posts",
             GameInfo::find()
         );
+
+
+
 //        foreach ($gameinfos as $gameinfo) {
 //            echo "<a href='http://www.doyo.cn/.$gameinfo->url.'> $gameinfo->hotTitle.<br></a>";
 //       }
