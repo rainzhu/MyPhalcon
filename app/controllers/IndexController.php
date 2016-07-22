@@ -25,10 +25,10 @@ class IndexController extends ControllerBase
 //        }
         //2016.7.20 zhuyu
         $gameinfos = GameInfo::find();
-//     foreach ($gameinfos as $gameinfo) {
-//            echo $gameinfo->hotTitle, "\n";
-//        }
-        
+    foreach ($gameinfos as $gameinfo) {
+            echo $gameinfo->hotTitle, "\n";
+       }
+
         echo "there are ", count($gameinfos);
     }
 
