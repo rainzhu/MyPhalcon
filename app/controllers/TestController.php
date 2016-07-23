@@ -10,7 +10,7 @@ class TestController extends ControllerBase
 
     public function indexAction()
     {
-       // $this->flash->success('success');
+        $this->flash->success('来构建你的个性化推荐吧');
     }
-
+    //2016.7.23  测试用户的行为
 }

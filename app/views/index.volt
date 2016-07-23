@@ -10,6 +10,15 @@
     </head>
     <body>
         {{ content() }}
+        <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <p><p>
+        </div>
         {{ javascript_include('js/jquery.min.js') }}
         {{ javascript_include('js/bootstrap.min.js') }}
         {{ javascript_include('js/utils.js') }}
