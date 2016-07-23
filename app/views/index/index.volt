@@ -8,8 +8,8 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>最新游戏资讯</h2>
+    <div class="col-md-3">
+        <h2>网络游戏</h2>
         <p>
         <?php
             foreach ($onlines as $online) {
@@ -18,7 +18,7 @@
         ?>
         </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h2>单机游戏</h2>
         <p>
           <?php
@@ -27,12 +27,20 @@
                     }
                  ?></p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h2>手机游戏</h2>
         <p> <?php
                        foreach ($phones as $phone) {
                        echo "<a href='http://www.doyo.cn/.$phone->url.'> $phone->hotTitle.<br></a>";
                       }
-                   ?> </p>
+        ?> </p>
     </div>
+        <div class="col-md-3">
+            <h2>其他游戏</h2>
+            <p> <?php
+                           foreach ($others as $other) {
+                           echo "<a href='http://www.doyo.cn/.$other->url.'> $other->hotTitle.<br></a>";
+                          }
+              ?> </p>
+        </div>
 </div>

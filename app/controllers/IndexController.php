@@ -47,6 +47,16 @@ class IndexController extends ControllerBase
                     "limit" => 50
                 ))
         );
+        //其他
+           $this->view->setVar(
+        "others",
+            GameInfo::find(
+                array(
+                    "tag = '其他'",
+                    "order" => "id",
+                    "limit" => 50
+                ))
+        );
 
 //        foreach ($gameinfos as $gameinfo) {
 //            echo "<a href='http://www.doyo.cn/.$gameinfo->url.'> $gameinfo->hotTitle.<br></a>";
