@@ -9,21 +9,30 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>网络游戏</h2>
+        <h2>最新游戏资讯</h2>
         <p>
         <?php
-            foreach ($posts as $post) {
-            echo "<a href='http://www.doyo.cn/.$post->url.'> $post->hotTitle.<br></a>";
+            foreach ($onlines as $online) {
+            echo "<a href='http://www.doyo.cn/.$online->url.'> $online->hotTitle.<br></a>";
            }
         ?>
         </p>
     </div>
     <div class="col-md-4">
         <h2>单机游戏</h2>
-        <p> </p>
+        <p>
+          <?php
+                     foreach ($offlines as $offline) {
+                     echo "<a href='http://www.doyo.cn/.$offline->url.'> $offline->hotTitle.<br></a>";
+                    }
+                 ?></p>
     </div>
     <div class="col-md-4">
         <h2>手机游戏</h2>
-        <p> </p>
+        <p> <?php
+                       foreach ($phones as $phone) {
+                       echo "<a href='http://www.doyo.cn/.$phone->url.'> $phone->hotTitle.<br></a>";
+                      }
+                   ?> </p>
     </div>
 </div>

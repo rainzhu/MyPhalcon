@@ -17,12 +17,36 @@ class IndexController extends ControllerBase
         //2016.7.20 zhuyu
         //$gameinfos = GameInfo::find();
         //把数据传输到前台
+        //网游
         $this->view->setVar(
-            "posts",
-            GameInfo::find()
+            "onlines",
+            GameInfo::find(
+                array(
+                "tag = '网游'",
+                "order" => "id",
+                "limit" => 50
+            ))
         );
-
-
+        //单机
+        $this->view->setVar(
+            "offlines",
+            GameInfo::find(
+                array(
+                    "tag = '单机'",
+                    "order" => "id",
+                    "limit" => 50
+                ))
+        );
+        //手游
+        $this->view->setVar(
+            "phones",
+            GameInfo::find(
+                array(
+                    "tag = '手游'",
+                    "order" => "id",
+                    "limit" => 50
+                ))
+        );
 
 //        foreach ($gameinfos as $gameinfo) {
 //            echo "<a href='http://www.doyo.cn/.$gameinfo->url.'> $gameinfo->hotTitle.<br></a>";
