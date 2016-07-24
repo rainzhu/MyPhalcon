@@ -10,7 +10,7 @@ class TestController extends ControllerBase
 
     public function indexAction()
     {
-        $this->flash->success('来构建你的个性化推荐吧');
+        $this->flash->success('来构建你的个性化推荐吧, 你喜欢下面那些信息？');
         //随机抽样分析用户的行为，实现从数据库随机获取测试数据
        // SELECT * FROM T_USER  ORDER BY  RAND() LIMIT 12
         $this->view->setVar(
