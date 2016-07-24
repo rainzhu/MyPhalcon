@@ -8,6 +8,7 @@ class IndexController extends ControllerBase
         $this->tag->setTitle('欢迎！');
         parent::initialize();
     }
+
     //获取部分数据库的数据并展示测试
     public function indexAction()
     {
