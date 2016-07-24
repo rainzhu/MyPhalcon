@@ -9,7 +9,7 @@
         <meta name="author" content="Phalcon Team">
     </head>
     <body>
-
+    {{ content() }}
 
         <div class="row">
 
@@ -23,7 +23,7 @@
                 ?></div>
         <div class="col-md-4"></div>
         </div>
-          {{ content() }}
+
         {{ javascript_include('js/jquery.min.js') }}
         {{ javascript_include('js/bootstrap.min.js') }}
         {{ javascript_include('js/utils.js') }}
